@@ -1,0 +1,16 @@
+.container-order {
+    display: flex;
+    justify-content: flex-end;
+    max-inline-size: 1100px;
+    margin: auto;
+    height: auto;
+    margin-top: 36px;
+    border-top: 1px solid white;
+    padding-top: 16px;
+    opacity: 0.6;
+
+    .order {
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,65 @@
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-inline-size: 1100px;
+  margin: auto;
+  padding: 24px 0 58px 0;
+  gap: 24px;
+  position: relative;
+
+  .movie {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid white;
+
+    .img {
+      margin-top: 22px;
+      padding: 6px;
+      background-color: white;
+      height: auto;
+      width: 110px;
+      border-radius: 4px;
+      position: absolute;
+    }
+
+    .title {
+      margin-top: 16px;
+      margin-left: 126px;
+      
+    }
+
+    .year {
+      padding-right: 8px;
+      margin-left: 126px;
+    }
+
+    .ratin {
+      padding-left: 8px;
+      padding-bottom: 16px;
+      padding-top: 16px;
+      color: rgb(210, 40, 10);
+    }
+
+    .description {
+      margin-top: 14px;
+      margin-left: 126px;
+    }
+
+    .director {
+      margin-top: 14px;
+      margin-left: 126px;
+    }
+
+    .actors {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 126px;
+    }
+
+    .category {
+      margin-bottom: 24px;
+      margin-left: 126px;
+    }
+  }
+
+}
