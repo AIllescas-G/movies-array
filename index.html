@@ -1,82 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-</head>
+  <body>
+    <div class="header-container">
+      <div class="grid">
+        <button class="icon-grid" id="layoutGrid">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-view-stacked"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"
+            />
+          </svg>
+        </button>
 
-<body>
-
-  <div class="header-container">
-
-    <div class="nex-prev">
-      <button class="nex-page" id="prevPage"> ATRÁS </button>
-      <button class="nex-page" id="nexPage"> SIGIENTE </button>
+        <button class="icon-grid" id="layoutList">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-view-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2m0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <div class="grid">
-      <button class="icon-grid" id="layoutGrid">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-view-stacked"
-          viewBox="0 0 16 16">
-          <path
-            d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
-        </svg>
-      </button>
+    <div class="buscador-container">
+      <label for="category">Filtrar por categoría:</label>
+      <select class="selectCategory icon" id="category">
+        <option value="all">Todas</option>
+        <option value="Drama">Drama</option>
+        <option value="Action">Acción</option>
+        <option value="Crime">Crimen</option>
+        <option value="Biography">Biografía</option>
+        <option value="Adventure">Aventura</option>
+      </select>
 
-      <button class="icon-grid" id="layoutList">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-view-list"
-          viewBox="0 0 16 16">
-          <path
-            d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2m0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14" />
-        </svg>
-      </button>
+      <input
+        id="buscador"
+        class="buscador"
+        type="search"
+        placeholder="Buscar por título de películas"
+        value=""
+      />
+
+      <div class="button">
+        <button class="button-withe" id="buttonFilter">filtrar</button>
+        <button class="button-red" id="buttonClean">limpiar</button>
+      </div>
     </div>
 
-  </div>
-
-  <div class="buscador-container">
-    <label for="category">Filtrar por categoría:</label>
-    <select class="selectCategory icon" id="category">
-      <option value="all">Todas</option>
-      <option value="Drama">Drama</option>
-      <option value="Action">Acción</option>
-      <option value="Crime">Crimen</option>
-      <option value="Biography">Biografía</option>
-      <option value="Adventure">Aventura</option>
-    </select>
-
-    <input id="buscador" class="buscador" type="search" placeholder="Buscar por título de películas" value="">
-
-    <div class="button">
-      <button class="button-withe" id="buttonFilter">filtrar</button>
-      <button class="button-red" id="buttonClean">limpiar</button>
+    <div class="number-movies">
+      <div>
+        <small id="pag"></small>
+      </div>
+      <p class="muber-of-movies" id="numberOfMovies"></p>
     </div>
 
-  </div>
+    <div class="container-order">
+      <p class="header">Ordenación</p>
+      <div class="order" id="orderA">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+      </div>
 
-  <div class="number-movies">
-    <div>
-      <small id="pag"></small>
+      <div class="order" id="orderZ">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
+      </div>
     </div>
-    <p class="muber-of-movies" id="numberOfMovies"></p>
-  </div>
 
-  <div class="container-order">
-    <div class="order" id="order"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-        width="24px" fill="#e8eaed">
-        <path
-          d="m80-280 150-400h86l150 400h-82l-34-96H196l-32 96H80Zm140-164h104l-48-150h-6l-50 150Zm328 164v-76l202-252H556v-72h282v76L638-352h202v72H548ZM360-760l120-120 120 120H360ZM480-80 360-200h240L480-80Z" />
-      </svg> </div>
-  </div>
-  
-  <div class="container" id="container">
+    <div class="container" id="container"></div>
 
-  </div>
-
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

@@ -112,7 +112,7 @@ export const movies = [
       "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
     category: "Action",
     rating: 8.6,
-    poster: "http://image.tmdb.org/t/p/w500//qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/dcKfD8xWf8XnS3tHVp7v331wdNT.jpg",
   },
 
   {
@@ -170,42 +170,6 @@ export const movies = [
     category: "Adventure",
     rating: 8.6,
     poster: "https://www.themoviedb.org/t/p/w1280/9d1sCoMSGJZtghS2X9us1h9u8lW.jpg",
-  },
-
-  {
-    title: "Inception",
-    director: "Christopher Nolan",
-    actors: "Leonardo DiCaprio, Joseph Gordon-Levitt",
-    year: 2010,
-    description:
-      "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    category: "Action",
-    rating: 8.8,
-    poster: "https://www.themoviedb.org/t/p/w1280/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg",
-  },
-
-  {
-    title: "Se7en",
-    director: "David Fincher",
-    actors: "Morgan Freeman, Brad Pitt, Kevin Spacey",
-    year: 1995,
-    description:
-      "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
-    category: "Crime",
-    rating: 8.6,
-    poster: "https://www.themoviedb.org/t/p/w1280/uVPcVz4b2hnSGrXYLdIGRXwcivs.jpg",
-  },
- 
-  {
-    title: "Django Unchained",
-    director: "Quentin Tarantino",
-    actors: "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio",
-    year: 2012,
-    description:
-      "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
-    category: "Drama",
-    rating: 8.4,
-    poster: "https://www.themoviedb.org/t/p/w1280/naaYX64yMGzEFsATOFQDaxxQWbJ.jpg",
   },
   
 ];

@@ -32,6 +32,10 @@ h6 {
     margin-bottom: 8px;
 }
 
+em {
+    color: rgb(180, 17, 17);
+}
+
 small {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -50,7 +54,7 @@ button {
     color: black;
     border-radius: 4px;
     border: 0;
-    padding: 8px 12px 8px 12px;
+    padding: 12px 12px 12px 12px;
     cursor: pointer;
 }
 
@@ -65,14 +69,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
-.header-container {
-    max-inline-size: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 24px;
-}
+
 
 .number-movies {
     display: flex;

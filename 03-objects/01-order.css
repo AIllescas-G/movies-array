@@ -9,8 +9,31 @@
     padding-top: 16px;
     opacity: 0.6;
 
+    p {
+        margin-right: 8px;
+        text-align: end;
+        line-height: 26px;
+    }
+
     .order {
         cursor: pointer;
     }
+
+}
+
+
+.header-container {
+    padding: 36px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 8px;
+
+    button {
+        margin-right: 6px;
+    }
+
 
 }
